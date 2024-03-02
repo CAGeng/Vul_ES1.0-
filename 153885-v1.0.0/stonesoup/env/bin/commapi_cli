@@ -1,0 +1,10 @@
+#!/opt/stonesoup/env/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'stonesoup==4.0a','console_scripts','commapi_cli'
+__requires__ = 'stonesoup==4.0a'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('stonesoup==4.0a', 'console_scripts', 'commapi_cli')()
+    )

@@ -1,0 +1,11 @@
+prefix=/opt/stonesoup/dependencies
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/dependencies/lib64
+includedir=${prefix}/include
+
+Name: libtirpc
+Description: Transport Independent RPC Library
+Requires:
+Version: 0.2.4
+Libs: -L/opt/stonesoup/dependencies/lib64 -ltirpc
+Cflags: -I${prefix}/include/tirpc

@@ -1,0 +1,13 @@
+SERF_MAJOR_VERSION=1
+prefix=/opt/stonesoup/dependencies
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/dependencies/lib64
+includedir=${prefix}/include/serf-${SERF_MAJOR_VERSION}
+
+Name: serf
+Description: HTTP client library
+Version: 1.2.1
+Requires.private: libssl libcrypto
+Libs: -L${libdir} -lserf-${SERF_MAJOR_VERSION}
+Libs.private:   /opt/stonesoup/dependencies/lib64/libaprutil-1.la  -ldb-4.8   -lexpat /opt/stonesoup/dependencies/lib64/libapr-1.la -luuid -lrt -lcrypt -lpthread -ldl -lz
+Cflags: -I${includedir}

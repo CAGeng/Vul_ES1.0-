@@ -1,0 +1,10 @@
+prefix=/opt/stonesoup/dependencies
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/dependencies/lib64
+includedir=${prefix}/include/graphviz
+
+Name: libpathplan
+Description: Library for planning polyline and bezier paths around polygon obstacles
+Version: 2.34.0
+Libs: -L${libdir} -lpathplan
+Cflags: -I${includedir}

@@ -1,0 +1,10 @@
+prefix=/opt/stonesoup/dependencies
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/dependencies/lib64
+includedir=${prefix}/include
+
+Name: popt
+Version: 1.16
+Description: popt library.
+Libs: -L${libdir} -lpopt
+Cflags: -I${includedir}

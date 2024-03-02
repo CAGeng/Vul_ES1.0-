@@ -1,0 +1,11 @@
+prefix=/opt/stonesoup/usr
+exec_prefix=/opt/stonesoup/usr
+libdir=/opt/stonesoup/usr/lib64
+includedir=${prefix}/include
+
+Name: Nettle
+Description: Nettle low-level cryptographic library (symmetric algorithms)
+URL: http://www.lysator.liu.se/~nisse/nettle
+Version: 2.7.1
+Libs: -L${libdir} -lnettle
+Cflags: -I${includedir}

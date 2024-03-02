@@ -1,0 +1,11 @@
+prefix=/opt/stonesoup/usr
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/usr/lib64
+includedir=${prefix}/include
+
+Name: libarchive
+Description: library that can create and read several streaming archive formats
+Version: 3.1.2
+Cflags: -I${includedir}
+Libs: -L${libdir} -larchive
+Libs.private: -lnettle -lacl -lattr -llzma -lbz2 -lz  -L/opt/stonesoup/usr/lib64 -lxml2 -L/opt/stonesoup/usr/lib -lz -lm -ldl

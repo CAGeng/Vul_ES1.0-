@@ -1,0 +1,1156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+  <head>
+    <title>PIC18F67K22</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <ul class="classMenu">
+      <li><a href="index.html">All</a></li>
+      <li><a href="enhanced-mcus.html">Enhanced</a></li>
+      <li><a href="extended-mcus.html">Extended</a></li>
+      <li><a href="regular-mcus.html">Regular</a></li>
+      <li><a href="12-bits-mcus.html">12 bits</a></li>
+      <li><a href="14-bits-mcus.html">14 bits</a></li>
+      <li><a href="16-bits-mcus.html">16 bits</a></li>
+      <li><a href="mcus-by-ram-size.html">by RAM size</a></li>
+      <li><a href="mcus-by-rom-size.html">by ROM size</a></li>
+      <li><a href="mcus-by-eeprom-size.html">by EEPROM size</a></li>
+    </ul>
+    <ul class="tabs">
+      <li><a href="PIC18F67K22-feat.html">Features</a></li>
+      <li class="selected"><a href="PIC18F67K22-conf.html">Configuration Bits</a></li>
+      <li><a href="PIC18F67K22-ram.html">RAM map</a></li>
+      <li><a href="PIC18F67K22-sfr.html">SFR map</a></li>
+    </ul>
+    <table class="configList">
+      <tr><th colspan=5 class="confTableName">PIC18F67K22</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG1L (address:0x300000, mask:0x5D)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">RETEN -- VREG Sleep Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">RETEN = OFF</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">Disabled - Controlled by SRETEN bit.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">RETEN = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">INTOSCSEL -- LF-INTOSC Low-power Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">INTOSCSEL = LOW</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">LF-INTOSC in Low-power mode during Sleep.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">INTOSCSEL = HIGH</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">LF-INTOSC in High-power mode during Sleep.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">SOSCSEL -- SOSC Power Selection and mode Configuration bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">SOSCSEL = LOW</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">Low Power SOSC circuit selected.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">SOSCSEL = DIG</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">Digital (SCLKI) mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">SOSCSEL = HIGH</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">High Power SOSC circuit selected.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">XINST -- Extended Instruction Set</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">XINST = OFF</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">XINST = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG1H (address:0x300001, mask:0x08)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">FOSC -- Oscillator</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = LP</td>
+        <td class="confSwValue">0xF0</td>
+        <td class="confSwExpl">LP oscillator.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = XT</td>
+        <td class="confSwValue">0xF1</td>
+        <td class="confSwExpl">XT oscillator.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = HS2</td>
+        <td class="confSwValue">0xF2</td>
+        <td class="confSwExpl">HS oscillator (High power, 16 MHz - 25 MHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = HS1</td>
+        <td class="confSwValue">0xF3</td>
+        <td class="confSwExpl">HS oscillator (Medium power, 4 MHz - 16 MHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC3IO</td>
+        <td class="confSwValue">0xF4</td>
+        <td class="confSwExpl">EC oscillator, CLKOUT function on OSC2 (High power, 16 MHz - 64 MHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC3</td>
+        <td class="confSwValue">0xF5</td>
+        <td class="confSwExpl">EC oscillator (High power, 16 MHz - 64 MHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = RC</td>
+        <td class="confSwValue">0xF6</td>
+        <td class="confSwExpl">External RC oscillator, CLKOUT function on OSC2.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = RCIO</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">External RC oscillator.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTIO2</td>
+        <td class="confSwValue">0xF8</td>
+        <td class="confSwExpl">Internal RC oscillator.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTIO1</td>
+        <td class="confSwValue">0xF9</td>
+        <td class="confSwExpl">Internal RC oscillator, CLKOUT function on OSC2.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC2IO</td>
+        <td class="confSwValue">0xFA</td>
+        <td class="confSwExpl">EC oscillator, CLKOUT function on OSC2 (Medium power, 160 kHz - 16 MHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC2</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">EC oscillator (Medium power, 160 kHz - 16 MHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC1IO</td>
+        <td class="confSwValue">0xFC</td>
+        <td class="confSwExpl">EC oscillator, CLKOUT function on OSC2 (Low power, DC - 160 kHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC1</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">EC oscillator (Low power, DC - 160 kHz).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">PLLCFG -- PLL x4 Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLCFG = OFF</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLCFG = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">FCMEN -- Fail-Safe Clock Monitor</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FCMEN = OFF</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FCMEN = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">IESO -- Internal External Oscillator Switch Over Mode</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">IESO = OFF</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">IESO = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG2L (address:0x300002, mask:0x7F)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">PWRTEN -- Power Up Timer</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PWRTEN = ON</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PWRTEN = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">BOREN -- Brown Out Detect</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = OFF</td>
+        <td class="confSwValue">0xF9</td>
+        <td class="confSwExpl">Disabled in hardware, SBOREN disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = ON</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">Controlled with SBOREN bit.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = NOSLP</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">Enabled while active, disabled in SLEEP, SBOREN disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = SBORDIS</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled in hardware, SBOREN disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">BORV -- Brown-out Reset Voltage bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORV = 0</td>
+        <td class="confSwValue">0xE7</td>
+        <td class="confSwExpl">3.0V.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORV = 1</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">2.7V.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORV = 2</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">2.0V.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORV = 3</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">1.8V.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">BORPWR -- BORMV Power level</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORPWR = LOW</td>
+        <td class="confSwValue">0x9F</td>
+        <td class="confSwExpl">BORMV set to low power level.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORPWR = MEDIUM</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">BORMV set to medium power level.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORPWR = HIGH</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">BORMV set to high power level.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BORPWR = ZPBORMV</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">ZPBORMV instead of BORMV is selected.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG2H (address:0x300003, mask:0x7F)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WDTEN -- Watchdog Timer</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTEN = OFF</td>
+        <td class="confSwValue">0xFC</td>
+        <td class="confSwExpl">WDT disabled in hardware; SWDTEN bit disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTEN = NOSLP</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">WDT enabled only while device is active and disabled in Sleep mode; SWDTEN bit disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTEN = ON</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">WDT controlled by SWDTEN bit setting.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTEN = SWDTDIS</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">WDT enabled in hardware; SWDTEN bit disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WDTPS -- Watchdog Postscaler</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 1</td>
+        <td class="confSwValue">0x83</td>
+        <td class="confSwExpl">1:1.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 2</td>
+        <td class="confSwValue">0x87</td>
+        <td class="confSwExpl">1:2.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 4</td>
+        <td class="confSwValue">0x8B</td>
+        <td class="confSwExpl">1:4.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 8</td>
+        <td class="confSwValue">0x8F</td>
+        <td class="confSwExpl">1:8.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 16</td>
+        <td class="confSwValue">0x93</td>
+        <td class="confSwExpl">1:16.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 32</td>
+        <td class="confSwValue">0x97</td>
+        <td class="confSwExpl">1:32.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 64</td>
+        <td class="confSwValue">0x9B</td>
+        <td class="confSwExpl">1:64.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 128</td>
+        <td class="confSwValue">0x9F</td>
+        <td class="confSwExpl">1:128.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 256</td>
+        <td class="confSwValue">0xA3</td>
+        <td class="confSwExpl">1:256.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 512</td>
+        <td class="confSwValue">0xA7</td>
+        <td class="confSwExpl">1:512.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 1024</td>
+        <td class="confSwValue">0xAB</td>
+        <td class="confSwExpl">1:1024.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 2048</td>
+        <td class="confSwValue">0xAF</td>
+        <td class="confSwExpl">1:2048.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 4096</td>
+        <td class="confSwValue">0xB3</td>
+        <td class="confSwExpl">1:4096.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 8192</td>
+        <td class="confSwValue">0xB7</td>
+        <td class="confSwExpl">1:8192.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 16384</td>
+        <td class="confSwValue">0xBB</td>
+        <td class="confSwExpl">1:16384.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 32768</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">1:32768.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 65536</td>
+        <td class="confSwValue">0xC3</td>
+        <td class="confSwExpl">1:65536.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 131072</td>
+        <td class="confSwValue">0xC7</td>
+        <td class="confSwExpl">1:131072.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 262144</td>
+        <td class="confSwValue">0xCB</td>
+        <td class="confSwExpl">1:262144.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 524288</td>
+        <td class="confSwValue">0xCF</td>
+        <td class="confSwExpl">1:524288.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 1048576</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">1:1048576.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG3L (address:0x300004, mask:0x01)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">RTCOSC -- RTCC Clock Select</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">RTCOSC = INTOSCREF</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">RTCC uses INTRC.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">RTCOSC = SOSCREF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">RTCC uses SOSC.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG3H (address:0x300005, mask:0x89)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CCP2MX -- CCP2 Mux</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CCP2MX = PORTBE</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">RE7-Microcontroller Mode/RB3-All other modes.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CCP2MX = PORTC</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">RC1.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">MSSPMSK -- MSSP address masking</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MSSPMSK = MSK5</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">5 bit address masking mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MSSPMSK = MSK7</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">7 Bit address masking mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">MCLRE -- Master Clear Enable</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MCLRE = OFF</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">MCLR Disabled, RG5 Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MCLRE = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">MCLR Enabled, RG5 Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG4L (address:0x300006, mask:0x91)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">STVREN -- Stack Overflow Reset</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">STVREN = OFF</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">STVREN = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">BBSIZ -- Boot Block Size</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BBSIZ = BB1K</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">1K word Boot Block size.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BBSIZ = BB2K</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">2K word Boot Block size.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">DEBUG -- Background Debug</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">DEBUG = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">DEBUG = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG5L (address:0x300008, mask:0xFF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP0 -- Code Protect 00800-03FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP0 = ON</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP0 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP1 -- Code Protect 04000-07FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP1 = ON</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP1 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP2 -- Code Protect 08000-0BFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP2 = ON</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP2 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP3 -- Code Protect 0C000-0FFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP3 = ON</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP3 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP4 -- Code Protect 10000-13FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP4 = ON</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP4 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP5 -- Code Protect 14000-17FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP5 = ON</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP5 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP6 -- Code Protect 18000-1BFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP6 = ON</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP6 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP7 -- Code Protect 1C000-1FFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP7 = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP7 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG5H (address:0x300009, mask:0xC0)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CPB -- Code Protect Boot</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPB = ON</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPB = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CPD -- Data EE Read Protect</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPD = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPD = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG6L (address:0x30000A, mask:0xFF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT0 -- Table Write Protect 00800-03FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT0 = ON</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT0 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT1 -- Table Write Protect 04000-07FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT1 = ON</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT1 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT2 -- Table Write Protect 08000-0BFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT2 = ON</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT2 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT3 -- Table Write Protect 0C000-0FFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT3 = ON</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT3 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT4 -- Table Write Protect 10000-13FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT4 = ON</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT4 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT5 -- Table Write Protect 14000-17FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT5 = ON</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT5 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT6 -- Table Write Protect 18000-1BFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT6 = ON</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT6 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRT7 -- Table Write Protect 1C000-1FFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT7 = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRT7 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG6H (address:0x30000B, mask:0xE0)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRTC -- Config. Write Protect</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRTC = ON</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRTC = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRTB -- Table Write Protect Boot</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRTB = ON</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRTB = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WRTD -- Data EE Write Protect</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRTD = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WRTD = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG7L (address:0x30000C, mask:0xFF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT0 -- Table Read Protect 00800-03FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT0 = ON</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT0 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT1 -- Table Read Protect 04000-07FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT1 = ON</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT1 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT2 -- Table Read Protect 08000-0BFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT2 = ON</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT2 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT3 -- Table Read Protect 0C000-0FFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT3 = ON</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT3 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT4 -- Table Read Protect 10000-13FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT4 = ON</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT4 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT5 -- Table Read Protect 14000-17FFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT5 = ON</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT5 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT6 -- Table Read Protect 18000-1BFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT6 = ON</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT6 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRT7 -- Table Read Protect 1C000-1FFFF</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT7 = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRT7 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG7H (address:0x30000D, mask:0x40)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EBRTB -- Table Read Protect Boot</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRTB = ON</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EBRTB = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+    </table>
+    <div class="legendContainer">
+      <p class="srcInfo">This page generated automatically by the <a href="https://sourceforge.net/p/gputils/code/HEAD/tree/trunk/scripts/tools/device-help.pl"><em>device-help.pl</em></a> program (2013-05-17 07:55:38 UTC) from the <em>8bit_device.info</em> file (rev: 1.13) of <em>mpasmx</em> and from the <a href="http://gputils.sourceforge.net#Download">gputils</a> source package (rev: svn 979:980). The <em>mpasmx</em> is included in the <a href="http://www.microchip.com/pagehandler/en-us/family/mplabx">MPLAB X</a>.</p>
+    </div>
+  </body>
+</html>

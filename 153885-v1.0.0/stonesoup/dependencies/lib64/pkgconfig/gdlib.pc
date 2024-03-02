@@ -1,0 +1,11 @@
+prefix=/opt/stonesoup/dependencies
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/dependencies/lib64
+includedir=${prefix}/include
+
+Name: gd
+Description: GD graphics library
+Version: 2.1.0
+Cflags: -I${includedir}
+Libs.private: -ljpeg -lz -lm  -L/opt/stonesoup/dependencies/lib64 -lpng16   -L/opt/stonesoup/dependencies/lib64 -lfreetype   -L/opt/stonesoup/dependencies/lib64 -lfontconfig -lfreetype   -lfontconfig -lXpm -lX11   
+Libs: -L${libdir} -lgd

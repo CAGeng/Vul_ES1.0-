@@ -1,0 +1,12 @@
+prefix=/opt/stonesoup/dependencies
+exec_prefix=${prefix}
+libdir=/opt/stonesoup/dependencies/lib64
+includedir=${prefix}/include
+
+
+Name: libexslt
+Version: 0.8.17
+Description: EXSLT Extension library
+Requires: libxml-2.0
+Libs: -L${libdir} -lexslt -lxslt  -L/opt/stonesoup/dependencies/lib64 -lxml2 -L/opt/stonesoup/dependencies/lib -lz -lm -ldl -lm -L/opt/stonesoup/usr/lib64 -lgcrypt -lgpg-error
+Cflags: -I${includedir}

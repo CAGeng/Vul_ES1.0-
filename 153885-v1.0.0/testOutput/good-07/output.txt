@@ -1,0 +1,13 @@
+"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":2,"max_score":1.0,"hits":[{"_index":"movies","_type":"movie","_id":"2","_score":1.0, "_source" : 
+{
+    "title": "Lawrence of Arabia",
+    "director": "David Lean",
+    "year": 1962,
+    "genres": ["Adventure", "Biography", "Drama"]
+}},{"_index":"movies","_type":"movie","_id":"3","_score":1.0, "_source" : 
+{
+    "title": "To Kill a Mockingbird",
+    "director": "Robert Mulligan",
+    "year": 1962,
+    "genres": ["Crime", "Drama", "Mystery"]
+}}]}}

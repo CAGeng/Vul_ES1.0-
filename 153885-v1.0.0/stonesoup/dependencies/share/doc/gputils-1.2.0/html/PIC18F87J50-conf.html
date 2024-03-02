@@ -1,0 +1,560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+  <head>
+    <title>PIC18F87J50</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <ul class="classMenu">
+      <li><a href="index.html">All</a></li>
+      <li><a href="enhanced-mcus.html">Enhanced</a></li>
+      <li><a href="extended-mcus.html">Extended</a></li>
+      <li><a href="regular-mcus.html">Regular</a></li>
+      <li><a href="12-bits-mcus.html">12 bits</a></li>
+      <li><a href="14-bits-mcus.html">14 bits</a></li>
+      <li><a href="16-bits-mcus.html">16 bits</a></li>
+      <li><a href="mcus-by-ram-size.html">by RAM size</a></li>
+      <li><a href="mcus-by-rom-size.html">by ROM size</a></li>
+      <li><a href="mcus-by-eeprom-size.html">by EEPROM size</a></li>
+    </ul>
+    <ul class="tabs">
+      <li><a href="PIC18F87J50-feat.html">Features</a></li>
+      <li class="selected"><a href="PIC18F87J50-conf.html">Configuration Bits</a></li>
+      <li><a href="PIC18F87J50-ram.html">RAM map</a></li>
+      <li><a href="PIC18F87J50-sfr.html">SFR map</a></li>
+    </ul>
+    <table class="configList">
+      <tr><th colspan=5 class="confTableName">PIC18F87J50</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG1L (address:0x01FFF8, mask:0xEF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WDTEN -- Watchdog Timer Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTEN = OFF</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">WDT disabled (control is placed on SWDTEN bit).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTEN = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">WDT enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">PLLDIV -- PLL Prescaler Selection bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 12</td>
+        <td class="confSwValue">0xF1</td>
+        <td class="confSwExpl">Divide by 12 (48 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 10</td>
+        <td class="confSwValue">0xF3</td>
+        <td class="confSwExpl">Divide by 10 (40 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 6</td>
+        <td class="confSwValue">0xF5</td>
+        <td class="confSwExpl">Divide by 6 (24 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 5</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">Divide by 5 (20 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 4</td>
+        <td class="confSwValue">0xF9</td>
+        <td class="confSwExpl">Divide by 4 (16 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 3</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">Divide by 3 (12 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 2</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">Divide by 2 (8 MHz oscillator input).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PLLDIV = 1</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">No prescale (4 MHz oscillator input drives PLL directly).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">STVREN -- Stack Overflow/Underflow Reset Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">STVREN = OFF</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">Reset on stack overflow/underflow disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">STVREN = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Reset on stack overflow/underflow enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">XINST -- Extended Instruction Set Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">XINST = OFF</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Instruction set extension and Indexed Addressing mode disabled (Legacy mode).</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">XINST = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Instruction set extension and Indexed Addressing mode enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">DEBUG -- Background Debugger Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">DEBUG = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Background debugger enabled; RB6 and RB7 are dedicated to In-Circuit Debug.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">DEBUG = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Background debugger disabled; RB6 and RB7 configured as general purpose I/O pins.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG1H (address:0x01FFF9, mask:0xF7)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CPUDIV -- CPU System Clock Postscaler</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPUDIV = OSC4_PLL6</td>
+        <td class="confSwValue">0xFC</td>
+        <td class="confSwExpl">CPU system clock divide by 6.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPUDIV = OSC3_PLL3</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">CPU system clock divide by 3.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPUDIV = OSC2_PLL2</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">CPU system clock divide by 2.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CPUDIV = OSC1</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">No CPU system clock divide.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP0 -- Code Protection bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP0 = ON</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">Program memory is code-protected.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP0 = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Program memory is not code-protected.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG2L (address:0x01FFFA, mask:0xC7)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">FOSC -- Oscillator Selection bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTOSC</td>
+        <td class="confSwValue">0xF8</td>
+        <td class="confSwExpl">INTOSC, Port function on RA6 and RA7.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTOSCO</td>
+        <td class="confSwValue">0xF9</td>
+        <td class="confSwExpl">INTOSC, CLKO on RA6 and Port function on RA7.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTOSCPLL</td>
+        <td class="confSwValue">0xFA</td>
+        <td class="confSwExpl">INTOSC with PLL enabled, Port function on RA6 and RA7.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTOSCPLLO</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">INTOSC with PLL enabled, CLKO on RA6 and Port function on RA7.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = HS</td>
+        <td class="confSwValue">0xFC</td>
+        <td class="confSwExpl">HS oscillator, HS used by USB.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = HSPLL</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">HS oscillator, PLL enabled, HSPLL used by USB.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">EC Oscillator with CLKO on RA6, EC used by USB.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = ECPLL</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">EC Oscillator with PLL, CLKO on RA6, ECPLL used by USB.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">FCMEN -- Fail-Safe Clock Monitor Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FCMEN = OFF</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">Fail-Safe Clock Monitor disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FCMEN = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Fail-Safe Clock Monitor enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">IESO -- Two-Speed Start-up (Internal/External Oscillator Switchover) Control bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">IESO = OFF</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Two-Speed Start-up disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">IESO = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Two-Speed Start-up enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG2H (address:0x01FFFB, mask:0xFF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WDTPS -- Watchdog Timer Postscaler Select bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 1</td>
+        <td class="confSwValue">0xF0</td>
+        <td class="confSwExpl">1:1.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 2</td>
+        <td class="confSwValue">0xF1</td>
+        <td class="confSwExpl">1:2.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 4</td>
+        <td class="confSwValue">0xF2</td>
+        <td class="confSwExpl">1:4.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 8</td>
+        <td class="confSwValue">0xF3</td>
+        <td class="confSwExpl">1:8.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 16</td>
+        <td class="confSwValue">0xF4</td>
+        <td class="confSwExpl">1:16.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 32</td>
+        <td class="confSwValue">0xF5</td>
+        <td class="confSwExpl">1:32.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 64</td>
+        <td class="confSwValue">0xF6</td>
+        <td class="confSwExpl">1:64.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 128</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">1:128.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 256</td>
+        <td class="confSwValue">0xF8</td>
+        <td class="confSwExpl">1:256.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 512</td>
+        <td class="confSwValue">0xF9</td>
+        <td class="confSwExpl">1:512.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 1024</td>
+        <td class="confSwValue">0xFA</td>
+        <td class="confSwExpl">1:1024.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 2048</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">1:2048.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 4096</td>
+        <td class="confSwValue">0xFC</td>
+        <td class="confSwExpl">1:4096.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 8192</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">1:8192.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 16384</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">1:16384.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTPS = 32768</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">1:32768.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG3L (address:0x01FFFC, mask:0xF8)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">EASHFT -- External Address Bus Shift Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EASHFT = OFF</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">Address shifting disabled, address on external bus reflects the PC value.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">EASHFT = ON</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Address shifting enabled, address on external bus is offset to start at 000000h.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">MODE -- External Memory Bus Configuration bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MODE = XM20</td>
+        <td class="confSwValue">0xCF</td>
+        <td class="confSwExpl">Extended Microcontroller mode - 20-bit Address mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MODE = XM16</td>
+        <td class="confSwValue">0xDF</td>
+        <td class="confSwExpl">Extended Microcontroller mode - 16-bit Address mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MODE = XM12</td>
+        <td class="confSwValue">0xEF</td>
+        <td class="confSwExpl">Extended Microcontroller mode - 12-bit Address mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MODE = MM</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Microcontroller mode - External bus disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">BW -- Data Bus Width Select bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BW = 8</td>
+        <td class="confSwValue">0xBF</td>
+        <td class="confSwExpl">8-bit external bus mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BW = 16</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">16-bit external bus mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WAIT -- External Bus Wait Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WAIT = ON</td>
+        <td class="confSwValue">0x7F</td>
+        <td class="confSwExpl">Wait states on the external bus are enabled and selected by MEMCON<5:4>.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WAIT = OFF</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">Wait states on the external bus are disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG3H (address:0x01FFFD, mask:0xFF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CCP2MX -- ECCP2 MUX bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CCP2MX = ALTERNATE</td>
+        <td class="confSwValue">0xFE</td>
+        <td class="confSwExpl">ECCP2/P2A is multiplexed with RE7 in Microcontroller mode or with RB3 in Extended Microcontroller mode.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CCP2MX = DEFAULT</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">ECCP2/P2A is multiplexed with RC1.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">ECCPMX -- ECCPx MUX bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">ECCPMX = ALTERNATE</td>
+        <td class="confSwValue">0xFD</td>
+        <td class="confSwExpl">ECCP1 outputs (P1B/P1C) are multiplexed with RH7 and RH6; ECCP3 outputs (P3B/P3C) are multiplexed with RH5 and RH4.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">ECCPMX = DEFAULT</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">ECCP1 outputs (P1B/P1C) are multiplexed with RE6 and RE5; ECCP3 outputs (P3B/P3C) are multiplexed with RE4 and RE3.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">PMPMX -- PMP Pin Multiplex bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PMPMX = ALTERNATE</td>
+        <td class="confSwValue">0xFB</td>
+        <td class="confSwExpl">PMP pins placed else where.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PMPMX = DEFAULT</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">PMP pins placed on EMB.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">MSSPMSK -- MSSP Address Masking Mode Select bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MSSPMSK = MSK5</td>
+        <td class="confSwValue">0xF7</td>
+        <td class="confSwExpl">5-Bit Address Masking mode enable.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MSSPMSK = MSK7</td>
+        <td class="confSwValue">0xFF</td>
+        <td class="confSwExpl">7-Bit Address Masking mode enable.</td>
+        <td class="vMargin"></td>
+      </tr>
+    </table>
+    <div class="legendContainer">
+      <p class="srcInfo">This page generated automatically by the <a href="https://sourceforge.net/p/gputils/code/HEAD/tree/trunk/scripts/tools/device-help.pl"><em>device-help.pl</em></a> program (2013-05-17 07:55:38 UTC) from the <em>8bit_device.info</em> file (rev: 1.13) of <em>mpasmx</em> and from the <a href="http://gputils.sourceforge.net#Download">gputils</a> source package (rev: svn 979:980). The <em>mpasmx</em> is included in the <a href="http://www.microchip.com/pagehandler/en-us/family/mplabx">MPLAB X</a>.</p>
+    </div>
+  </body>
+</html>

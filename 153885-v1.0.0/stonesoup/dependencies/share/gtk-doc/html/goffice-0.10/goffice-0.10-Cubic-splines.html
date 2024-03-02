@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cubic splines</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="GOffice Reference Manual">
+<link rel="up" href="ch13.html" title="Mathematical functions">
+<link rel="prev" href="goffice-0.10-GOComplex.html" title="GOComplex">
+<link rel="next" href="GODistribution.html" title="GODistribution">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="goffice-0.10-GOComplex.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch13.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GOffice Reference Manual</th>
+<td><a accesskey="n" href="GODistribution.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#goffice-0.10-Cubic-splines.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#goffice-0.10-Cubic-splines.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="goffice-0.10-Cubic-splines"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="goffice-0.10-Cubic-splines.top_of_page"></a>Cubic splines</span></h2>
+<p>Cubic splines</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="goffice-0.10-Cubic-splines.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">enum                <a class="link" href="goffice-0.10-Cubic-splines.html#GOCSplineType" title="enum GOCSplineType">GOCSplineType</a>;
+<span class="returnvalue">void</span>                <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-destroy" title="go_cspline_destroy ()">go_cspline_destroy</a>                  (<em class="parameter"><code><span class="type">GOCSpline</span> *sp</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-destroyl" title="go_cspline_destroyl ()">go_cspline_destroyl</a>                 (<em class="parameter"><code><span class="type">GOCSplinel</span> *sp</code></em>);
+<span class="returnvalue">double</span>              <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-deriv" title="go_cspline_get_deriv ()">go_cspline_get_deriv</a>                (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> x</code></em>);
+long <span class="returnvalue">double</span>         <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-derivl" title="go_cspline_get_derivl ()">go_cspline_get_derivl</a>               (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> x</code></em>);
+<span class="returnvalue">double</span> *            <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-derivs" title="go_cspline_get_derivs ()">go_cspline_get_derivs</a>               (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);
+long <span class="returnvalue">double</span> *       <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-derivsl" title="go_cspline_get_derivsl ()">go_cspline_get_derivsl</a>              (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);
+<span class="returnvalue">double</span> *            <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-integrals" title="go_cspline_get_integrals ()">go_cspline_get_integrals</a>            (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);
+long <span class="returnvalue">double</span> *       <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-integralsl" title="go_cspline_get_integralsl ()">go_cspline_get_integralsl</a>           (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);
+<span class="returnvalue">double</span>              <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-value" title="go_cspline_get_value ()">go_cspline_get_value</a>                (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> x</code></em>);
+long <span class="returnvalue">double</span>         <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-valuel" title="go_cspline_get_valuel ()">go_cspline_get_valuel</a>               (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> x</code></em>);
+<span class="returnvalue">double</span> *            <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-values" title="go_cspline_get_values ()">go_cspline_get_values</a>               (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);
+long <span class="returnvalue">double</span> *       <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-get-valuesl" title="go_cspline_get_valuesl ()">go_cspline_get_valuesl</a>              (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);
+<span class="returnvalue">GOCSpline</span> *         <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-init" title="go_cspline_init ()">go_cspline_init</a>                     (<em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>,
+                                                         <em class="parameter"><code><span class="type">unsigned </span> limits</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> c0</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> cn</code></em>);
+<span class="returnvalue">GOCSplinel</span> *        <a class="link" href="goffice-0.10-Cubic-splines.html#go-cspline-initl" title="go_cspline_initl ()">go_cspline_initl</a>                    (<em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>,
+                                                         <em class="parameter"><code><span class="type">unsigned </span> limits</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> a0</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> a1</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="goffice-0.10-Cubic-splines.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="goffice-0.10-Cubic-splines.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="GOCSplineType"></a><h3>enum GOCSplineType</h3>
+<pre class="programlisting">typedef enum {
+	GO_CSPLINE_NATURAL,
+	GO_CSPLINE_PARABOLIC,
+	GO_CSPLINE_CUBIC,
+	GO_CSPLINE_CLAMPED,
+} GOCSplineType;
+</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><a name="GO-CSPLINE-NATURAL:CAPS"></a><span class="term"><code class="literal">GO_CSPLINE_NATURAL</code></span></p></td>
+<td>natural.
+</td>
+</tr>
+<tr>
+<td><p><a name="GO-CSPLINE-PARABOLIC:CAPS"></a><span class="term"><code class="literal">GO_CSPLINE_PARABOLIC</code></span></p></td>
+<td>parabolic.
+</td>
+</tr>
+<tr>
+<td><p><a name="GO-CSPLINE-CUBIC:CAPS"></a><span class="term"><code class="literal">GO_CSPLINE_CUBIC</code></span></p></td>
+<td>cubic.
+</td>
+</tr>
+<tr>
+<td><p><a name="GO-CSPLINE-CLAMPED:CAPS"></a><span class="term"><code class="literal">GO_CSPLINE_CLAMPED</code></span></p></td>
+<td>clamped.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-destroy"></a><h3>go_cspline_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                go_cspline_destroy                  (<em class="parameter"><code><span class="type">GOCSpline</span> *sp</code></em>);</pre>
+<p>
+Frees the spline structure when done.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>sp</code></em> :</span></p></td>
+<td>a spline structure returned by go_cspline_init.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-destroyl"></a><h3>go_cspline_destroyl ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                go_cspline_destroyl                 (<em class="parameter"><code><span class="type">GOCSplinel</span> *sp</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-deriv"></a><h3>go_cspline_get_deriv ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>              go_cspline_get_deriv                (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>
+sp must be a valid spline structure as returned by go_cspline_init.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sp</code></em> :</span></p></td>
+<td>a spline structure returned by go_cspline_init.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>the value</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the interpolated derivative at x, or 0 if an error occurred.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-derivl"></a><h3>go_cspline_get_derivl ()</h3>
+<pre class="programlisting">long <span class="returnvalue">double</span>         go_cspline_get_derivl               (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> x</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-derivs"></a><h3>go_cspline_get_derivs ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span> *            go_cspline_get_derivs               (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);</pre>
+<p>
+sp must be a valid spline structure as returned by go_cspline_init.
+The x values must be sorted in increasing order.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sp</code></em> :</span></p></td>
+<td>a spline structure returned by go_cspline_init.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>a vector a values at which interpolation is requested.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n</code></em> :</span></p></td>
+<td>the number of interpolation requested.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated array of the n interpolated derivatives which
+should be destroyed by a call to g_free when not anymore needed, or NULL if
+an error occurred.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-derivsl"></a><h3>go_cspline_get_derivsl ()</h3>
+<pre class="programlisting">long <span class="returnvalue">double</span> *       go_cspline_get_derivsl              (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-integrals"></a><h3>go_cspline_get_integrals ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span> *            go_cspline_get_integrals            (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);</pre>
+<p>
+sp must be a valid spline structure as returned by go_cspline_init.
+The x values must be sorted in increasing order.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sp</code></em> :</span></p></td>
+<td>a spline structure returned by go_cspline_init.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>a vector a values at which interpolation is requested.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n</code></em> :</span></p></td>
+<td>the number of interpolation requested.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated array of the n-1 integrals on the intervals
+between two consecutive values stored in x. which should be destroyed by
+a call to g_free when not anymore needed, or NULL if  an error occurred.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-integralsl"></a><h3>go_cspline_get_integralsl ()</h3>
+<pre class="programlisting">long <span class="returnvalue">double</span> *       go_cspline_get_integralsl           (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-value"></a><h3>go_cspline_get_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>              go_cspline_get_value                (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>
+sp must be a valid spline structure as returned by go_cspline_init.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sp</code></em> :</span></p></td>
+<td>a spline structure returned by go_cspline_init.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>The value</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the interpolated value for x, or 0 if an error occurred.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-valuel"></a><h3>go_cspline_get_valuel ()</h3>
+<pre class="programlisting">long <span class="returnvalue">double</span>         go_cspline_get_valuel               (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> x</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-values"></a><h3>go_cspline_get_values ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span> *            go_cspline_get_values               (<em class="parameter"><code><span class="type">GOCSpline</span> const *sp</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);</pre>
+<p>
+sp must be a valid spline structure as returned by go_cspline_init.
+The x values must be sorted in increasing order.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sp</code></em> :</span></p></td>
+<td>a spline structure returned by go_cspline_init.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>a vector a values at which interpolation is requested.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n</code></em> :</span></p></td>
+<td>the number of interpolation requested.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated array of interpolated values which should
+be destroyed by a call to g_free when not anymore needed, or NULL if
+an error occurred.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-get-valuesl"></a><h3>go_cspline_get_valuesl ()</h3>
+<pre class="programlisting">long <span class="returnvalue">double</span> *       go_cspline_get_valuesl              (<em class="parameter"><code><span class="type">GOCSplinel</span> const *sp</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-init"></a><h3>go_cspline_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">GOCSpline</span> *         go_cspline_init                     (<em class="parameter"><code><span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> const *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>,
+                                                         <em class="parameter"><code><span class="type">unsigned </span> limits</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> c0</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> cn</code></em>);</pre>
+<p>
+Creates a spline structure, and computes the coefficients associated with the
+polynoms. The ith polynome (between x[i-1] and x[i] is:
+y(x) = y[i-1] + (c[i-1] + (b[i-1] + a[i] * (x - x[i-1])) * (x - x[i-1])) * (x - x[i-1])
+where a[i-1], b[i-1], c[i-1], x[i-1] and y[i-1] are the corresponding
+members of the new structure.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>the x values</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
+<td>the y values</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n</code></em> :</span></p></td>
+<td>the number of x and y values</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>limits</code></em> :</span></p></td>
+<td>how the limits must be treated, four values are allowed:
+GO_CSPLINE_NATURAL: first and least second derivatives are 0.
+GO_CSPLINE_PARABOLIC: the curve will be a parabole arc outside of the limits.
+GO_CSPLINE_CUBIC: the curve will be cubic outside of the limits.
+GO_CSPLINE_CLAMPED: the first and last derivatives are imposed.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>c0</code></em> :</span></p></td>
+<td>the first derivative when using clamped splines, not used in the
+other limit types.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>cn</code></em> :</span></p></td>
+<td>the first derivative when using clamped splines, not used in the
+other limit types.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly created GOCSpline instance which should be
+destroyed by a call to go_bezier_spline_destroy.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="go-cspline-initl"></a><h3>go_cspline_initl ()</h3>
+<pre class="programlisting"><span class="returnvalue">GOCSplinel</span> *        go_cspline_initl                    (<em class="parameter"><code>long <span class="type">double</span> const *x</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> const *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n</code></em>,
+                                                         <em class="parameter"><code><span class="type">unsigned </span> limits</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> a0</code></em>,
+                                                         <em class="parameter"><code>long <span class="type">double</span> a1</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

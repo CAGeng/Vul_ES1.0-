@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+  <head>
+    <title>PIC16F616</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <ul class="classMenu">
+      <li><a href="index.html">All</a></li>
+      <li><a href="enhanced-mcus.html">Enhanced</a></li>
+      <li><a href="extended-mcus.html">Extended</a></li>
+      <li><a href="regular-mcus.html">Regular</a></li>
+      <li><a href="12-bits-mcus.html">12 bits</a></li>
+      <li><a href="14-bits-mcus.html">14 bits</a></li>
+      <li><a href="16-bits-mcus.html">16 bits</a></li>
+      <li><a href="mcus-by-ram-size.html">by RAM size</a></li>
+      <li><a href="mcus-by-rom-size.html">by ROM size</a></li>
+      <li><a href="mcus-by-eeprom-size.html">by EEPROM size</a></li>
+    </ul>
+    <ul class="tabs">
+      <li><a href="PIC16F616-feat.html">Features</a></li>
+      <li class="selected"><a href="PIC16F616-conf.html">Configuration Bits</a></li>
+      <li><a href="PIC16F616-ram.html">RAM map</a></li>
+      <li><a href="PIC16F616-sfr.html">SFR map</a></li>
+    </ul>
+    <table class="configList">
+      <tr><th colspan=5 class="confTableName">PIC16F616</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=4 class="configWord">CONFIG (address:0x2007, mask:0xFFFF)</th></tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">FOSC -- Oscillator Selection bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = LP</td>
+        <td class="confSwValue">0x3FF8</td>
+        <td class="confSwExpl">LP oscillator: Low-power crystal on RA4/OSC2/CLKOUT and RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = XT</td>
+        <td class="confSwValue">0x3FF9</td>
+        <td class="confSwExpl">XT oscillator: Crystal/resonator on RA4/OSC2/CLKOUT and RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = HS</td>
+        <td class="confSwValue">0x3FFA</td>
+        <td class="confSwExpl">HS oscillator: High-speed crystal/resonator on RA4/OSC2/CLKOUT and RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EC</td>
+        <td class="confSwValue">0x3FFB</td>
+        <td class="confSwExpl">EC: I/O function on RA4/OSC2/CLKOUT pin, CLKIN on RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTOSCIO</td>
+        <td class="confSwValue">0x3FFC</td>
+        <td class="confSwExpl">INTOSCIO oscillator: I/O function on RA4/OSC2/CLKOUT pin, I/O function on RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = INTOSCCLK</td>
+        <td class="confSwValue">0x3FFD</td>
+        <td class="confSwExpl">INTOSC oscillator: CLKOUT function on RA4/OSC2/CLKOUT pin, I/O function on RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EXTRCIO</td>
+        <td class="confSwValue">0x3FFE</td>
+        <td class="confSwExpl">RCIO oscillator: I/O function on RA4/OSC2/CLKOUT pin, RC on RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">FOSC = EXTRCCLK</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">RC oscillator: CLKOUT function on RA4/OSC2/CLKOUT pin, RC on RA5/OSC1/CLKIN.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">WDTE -- Watchdog Timer Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTE = OFF</td>
+        <td class="confSwValue">0x3FF7</td>
+        <td class="confSwExpl">WDT disabled and can be enabled by SWDTEN bit of the WDTCON register.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">WDTE = ON</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">WDT enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">PWRTE -- Power-up Timer Enable bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PWRTE = ON</td>
+        <td class="confSwValue">0x3FEF</td>
+        <td class="confSwExpl">PWRT enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">PWRTE = OFF</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">PWRT disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">MCLRE -- MCLR Pin Function Select bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MCLRE = OFF</td>
+        <td class="confSwValue">0x3FDF</td>
+        <td class="confSwExpl">MCLR pin function is digital input, MCLR internally tied to VDD.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">MCLRE = ON</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">MCLR pin function is MCLR.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">CP -- Code Protection bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP = ON</td>
+        <td class="confSwValue">0x3FBF</td>
+        <td class="confSwExpl">Program memory code protection is enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">CP = OFF</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">Program memory code protection is disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">IOSCFS -- Internal Oscillator Frequency Select bit</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">IOSCFS = 4MHZ</td>
+        <td class="confSwValue">0x3F7F</td>
+        <td class="confSwExpl">4 MHz.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">IOSCFS = 8MHZ</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">8 MHz.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr class="confGap"><td></td></tr>
+      <tr><th colspan=3 class="confOptName">BOREN -- Brown-out Reset Selection bits</th></tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = OFF</td>
+        <td class="confSwValue">0x3CFF</td>
+        <td class="confSwExpl">BOR Disabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = NSLEEP</td>
+        <td class="confSwValue">0x3EFF</td>
+        <td class="confSwExpl">BOR enabled during operation and disabled in Sleep.</td>
+        <td class="vMargin"></td>
+      </tr>
+      <tr>
+        <td class="vMargin"></td>
+        <td class="confSwName">BOREN = ON</td>
+        <td class="confSwValue">0x3FFF</td>
+        <td class="confSwExpl">BOR enabled.</td>
+        <td class="vMargin"></td>
+      </tr>
+    </table>
+    <div class="legendContainer">
+      <p class="srcInfo">This page generated automatically by the <a href="https://sourceforge.net/p/gputils/code/HEAD/tree/trunk/scripts/tools/device-help.pl"><em>device-help.pl</em></a> program (2013-05-17 07:55:34 UTC) from the <em>8bit_device.info</em> file (rev: 1.13) of <em>mpasmx</em> and from the <a href="http://gputils.sourceforge.net#Download">gputils</a> source package (rev: svn 979:980). The <em>mpasmx</em> is included in the <a href="http://www.microchip.com/pagehandler/en-us/family/mplabx">MPLAB X</a>.</p>
+    </div>
+  </body>
+</html>
